@@ -3,6 +3,7 @@ import ItemCard from "./ItemCard";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cart);
@@ -11,6 +12,8 @@ const Cart = () => {
     (totalPrice, item) => totalPrice + item.qty * item.price,
     0
   );
+
+  const navigate = useNavigate();
 
   const [activeCart, setActiveCart] = useState(false);
 
@@ -47,7 +50,12 @@ const Cart = () => {
             Total Amount: ₹{totalPrice}
           </h3>
           <hr className="lg:w-[18vw] w-[90vw] my-2" />
-          <button className="bg-green-500 rounded-lg text-white font-bold px-3 py-2 w-[90vw] lg:w-[18vw] mb-5">
+          <button
+            onClick={() => {
+              navigate("/success");
+            }}
+            className="bg-green-500 rounded-lg text-white font-bold px-3 py-2 w-[90vw] lg:w-[18vw] mb-5"
+          >
             CheackOut
           </button>
         </div>

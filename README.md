@@ -1,8 +1,5 @@
-# React + Vite
+Developed a sleek and user-friendly Flavoro food app using React, Redux, and Tailwind CSS, featuring a seamless experience with a focus on simplicity, without the need for login authentication or middleware.
+Tech Stack:
+HTML, CSS, JavaScript, Tailwind, React, Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+click here to show the demo : https://flavoro-food.vercel.app/
